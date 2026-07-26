@@ -6,7 +6,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        project: './project.html'
+        project: './project.html',
+        about: './about.html',
+        socials: './socials.html'
       }
     }
   }

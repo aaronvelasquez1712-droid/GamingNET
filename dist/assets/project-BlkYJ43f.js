@@ -1,4 +1,4 @@
-import{a as g,b as p,s as b,c as y,d as v,e as h,f}from"./style-CcIPIIB3.js";function E(e){return new URLSearchParams(window.location.search).get(e)}function x(e,i){let t=document.getElementById("lightbox");t&&t.remove();let r=i;t=document.createElement("div"),t.id="lightbox",t.className="lightbox",t.innerHTML=`
+import{a as g,b as p,s as b,c as y,d as v,e as h,f}from"./supabase-BHHwPRoP.js";/* empty css              */function E(e){return new URLSearchParams(window.location.search).get(e)}function x(e,i){let t=document.getElementById("lightbox");t&&t.remove();let r=i;t=document.createElement("div"),t.id="lightbox",t.className="lightbox",t.innerHTML=`
     <div class="lightbox-overlay"></div>
     <div class="lightbox-inner">
       <button class="lightbox-close" aria-label="Cerrar">

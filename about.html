@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GamingNET | Sobre Mí</title>
+  <meta name="description" content="Conoce más sobre Fluxzy, el creador de GamingNET." />
+
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    /* ── About Page Layout ── */
+    .about-wrapper {
+      padding: 5rem 0 6rem;
+    }
+
+    /* Avatar + nombre centrado */
+    .about-profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    .avatar-ring {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--neon-yellow), var(--neon-orange));
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 40px rgba(204,255,0,0.25);
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: var(--bg-darker);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--neon-yellow);
+      letter-spacing: -1px;
+    }
+
+    .about-profile h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+
+    .about-profile .handle {
+      font-size: 1.1rem;
+      color: var(--neon-orange);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .about-profile .tagline {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 400px;
+    }
+
+    /* Línea divisoria con glow */
+    .glow-divider {
+      width: 80px;
+      height: 3px;
+      background: var(--gradient-glow);
+      border-radius: 99px;
+      margin: 2rem auto;
+      box-shadow: 0 0 12px rgba(204,255,0,0.4);
+    }
+
+    /* Bloques de texto con icono lateral */
+    .about-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .about-block {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .block-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(204,255,0,0.08);
+      border: 1px solid rgba(204,255,0,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-top: 0.2rem;
+    }
+
+    .block-text h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .block-text p {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* CTA final */
+    .about-cta {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .about-cta p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.8rem;
+      border-radius: 50px;
+      border: 2px solid rgba(255,255,255,0.15);
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: 'Outfit', sans-serif;
+      transition: border-color 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--neon-yellow);
+      color: var(--neon-yellow);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="/" class="logo">
+        Gaming<span>NET</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#proyectos" class="nav-link">Proyectos</a>
+        <a href="/about.html" class="nav-link active">Sobre Mí</a>
+        <a href="/socials.html" class="nav-link">Redes Sociales</a>
+        <a href="mailto:Aaronvelasquez1712@gmail.com" class="btn-primary-sm">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main About Content -->
+  <main class="container about-wrapper" id="about">
+
+    <!-- Avatar + nombre -->
+    <div class="about-profile">
+      <div class="avatar-ring">
+        <div class="avatar-inner">FZ</div>
+      </div>
+      <h2>¡Hola, soy <span class="highlight">Fluxzy</span>!</h2>
+      <p class="handle">@FluxzyZzz</p>
+      <p class="tagline">Desarrollador web apasionado por la tecnología y el código.</p>
+    </div>
+
+    <div class="glow-divider"></div>
+
+    <!-- Bloques de info -->
+    <div class="about-blocks">
+
+      <div class="about-block">
+        <!-- Gamepad / Controller icon -->
+        <div class="block-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--neon-yellow)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="4"/>
+            <line x1="8" y1="12" x2="12" y2="12"/>
+            <line x1="10" y1="10" x2="10" y2="14"/>
+            <circle cx="16" cy="11" r="1" fill="var(--neon-yellow)" stroke="none"/>
+            <circle cx="18" cy="13" r="1" fill="var(--neon-yellow)" stroke="none"/>
+          </svg>
+        </div>
+        <div class="block-text">
+          <h3>¿Quién soy?</h3>
+          <p>
+            Alguien que desde pequeño le ha gustado la informática y todo lo que tenga que ver con ella.
+            En esta página comparto mis proyectos para la gente que quiera probarlos.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <!-- Code / Terminal icon -->
+        <div class="block-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--neon-yellow)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <div class="block-text">
+          <h3>¿Por qué GamingNET?</h3>
+          <p>
+            Me gusta compartir lo que hago con la gente que me apoya. No son los proyectos más profesionales,
+            pero los hago con ganas y dedicación. ❤
+          </p>
+        </div>
+      </div>
+
+      <div class="about-block">
+        <!-- Message bubble icon -->
+        <div class="block-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--neon-yellow)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            <line x1="9" y1="10" x2="15" y2="10"/>
+            <line x1="9" y1="13" x2="13" y2="13"/>
+          </svg>
+        </div>
+        <div class="block-text">
+          <h3>¿Tienes dudas o sugerencias?</h3>
+          <p>
+            ¡Escríbeme sin problema! Respondo a todo lo que pueda. Puedes encontrarme en mis redes
+            o mandarme un correo directamente.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="about-cta">
+      <p>¿Quieres conectar conmigo?</p>
+      <div class="cta-buttons">
+        <a href="mailto:Aaronvelasquez1712@gmail.com" class="btn-primary">
+          ✉ Enviar correo
+        </a>
+        <a href="/socials.html" class="btn-outline">
+          Ver mis redes
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Gaming<span>NET</span></h3>
+        <p>Construido con dedicación.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/FluxzyZzz" target="_blank" class="social-link">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GamingNET. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.style.padding = '1rem 0';
+        navbar.style.background = 'rgba(10, 10, 15, 0.95)';
+      } else {
+        navbar.style.padding = '1.5rem 0';
+        navbar.style.background = 'rgba(10, 10, 15, 0.8)';
+      }
+    });
+  </script>
+
+</body>
+</html>
