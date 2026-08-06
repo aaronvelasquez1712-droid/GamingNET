@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF – GamingNET</title>
+  <meta name="description" content="Detalle del PDF" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./assets/favicon-CzTPtEBl.png" />
+  <script type="module" crossorigin src="./assets/pdf-CIzUnO8B.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/supabase-L-0F_XPF.js">
+  <link rel="stylesheet" crossorigin href="./assets/style-vIweGScI.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">Gaming<span>NET</span></a>
+      <nav class="nav-links">
+        <a href="index.html#pdfs" class="nav-link">PDFs</a>
+        <a href="index.html#about" class="nav-link">Sobre Mí</a>
+        <a href="https://instagram.com/FluxzyZzz" target="_blank" class="btn-primary-sm">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Vista de Biblioteca (cuando no hay ID) -->
+  <section class="container section" id="library-view" style="display: none;">
+    <div class="section-header">
+      <h2 class="section-title">Biblioteca de PDFs</h2>
+      <div class="title-underline"></div>
+      <p class="section-description" style="margin-top: 1rem; color: var(--text-secondary);">Busca y explora todos mis PDFs.</p>
+    </div>
+
+    <div class="search-glass-container" style="margin: 0 auto 3rem auto; max-width: 600px;">
+      <input type="text" id="library-search-input" class="search-input" placeholder="Buscar PDF rápido...">
+      <button class="search-submit-btn" aria-label="Buscar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+    </div>
+
+    <div id="library-grid" class="projects-grid"></div>
+    <div id="library-empty" class="status-message hidden">
+      <p>No se encontraron PDFs.</p>
+    </div>
+  </section>
+
+  <!-- Vista de Detalle de PDF -->
+  <section class="container section" id="pdf-detail" style="display: none;">
+    <!-- Encabezado -->
+    <div class="section-header">
+      <h2 id="pdf-title" class="section-title">Cargando...</h2>
+      <div class="title-underline"></div>
+    </div>
+
+    <!-- Meta: fecha y tags -->
+    <div class="project-meta">
+      <p id="pdf-date" class="project-date"></p>
+      <div id="pdf-tags" class="project-tags"></div>
+    </div>
+
+    <!-- Carousel de imágenes -->
+    <div class="carousel-container" id="pdf-carousel">
+      <button id="carousel-prev" class="carousel-btn prev-btn" aria-label="Anterior">&#8249;</button>
+      <div id="carousel-track" class="carousel-track"></div>
+      <button id="carousel-next" class="carousel-btn next-btn" aria-label="Siguiente">&#8250;</button>
+      <div id="carousel-dots" class="carousel-dots"></div>
+    </div>
+
+    <!-- Descripción completa -->
+    <div class="modal-body" id="pdf-description"></div>
+
+    <!-- Ver Documento -->
+    <div class="modal-downloads">
+      <h3 class="downloads-title">Documento</h3>
+      <div class="downloads-grid">
+        <a href="#" id="link-ver-documento" class="btn-download drive" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="12" y1="18" x2="12" y2="12"/>
+            <line x1="9" y1="15" x2="15" y2="15"/>
+          </svg>
+          <span class="btn-text">Ver documento</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sección de comentarios -->
+    <section class="comment-section">
+      <h3 class="comments-heading">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        Comentarios
+      </h3>
+
+      <!-- Lista de comentarios -->
+      <div id="comments-list" class="comments-list"></div>
+
+      <!-- Auth / Formulario de comentario -->
+      <div id="auth-section" class="auth-section"></div>
+    </section>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Gaming<span>NET</span></h3>
+        <p>Construido con dedicación.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/FluxzyZzz" target="_blank" class="social-link">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GamingNET. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

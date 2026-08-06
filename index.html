@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GamingNET | Proyectos, Juegos y Gu&iacute;as</title>
+  <meta name="description" content="Explora proyectos, descarga juegos y encuentra gu&iacute;as PDF para solucionar errores en GamingNET." />
+
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="icon" type="image/png" href="./assets/favicon-CzTPtEBl.png" />
+  <script type="module" crossorigin src="./assets/supabase-L-0F_XPF.js"></script>
+  <script type="module" crossorigin src="./assets/main-Bt3XH_3P.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-vIweGScI.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="/" class="logo">Gaming<span>NET</span></a>
+
+      <nav class="nav-links" id="nav-menu">
+
+        <!-- Inicio -->
+        <a href="#hero" class="nav-link nav-simple">
+          <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Inicio
+        </a>
+
+        <!-- Proyectos -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg> Proyectos
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#proyectos" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span>
+                <strong>Publicaciones</strong>
+                <small>Mis &uacute;ltimas entradas</small>
+              </span>
+            </a>
+            <a href="/project.html" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>
+                <strong>Proyectos</strong>
+                <small>Todos mis proyectos</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Juegos -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6" ry="6"/><circle cx="16" cy="12" r="1"/><circle cx="18" cy="12" r="1"/><path d="M6 12h4"/><path d="M8 10v4"/></svg> Juegos
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="/games.html" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>
+                <strong>Todos los Juegos</strong>
+                <small>Cat&aacute;logo completo</small>
+              </span>
+            </a>
+            <a href="#juegos" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>
+                <strong>Novedades</strong>
+                <small>Reci&eacute;n subidos</small>
+              </span>
+            </a>
+            <a href="#juegos" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              <span>
+                <strong>Pr&oacute;ximamente</strong>
+                <small>En preparaci&oacute;n</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FixHub -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> FixHub
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('all')">
+              <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+              <span>
+                <strong>Todas las Gu&iacute;as</strong>
+                <small>Ver todo</small>
+              </span>
+            </a>
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('windows')">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span>
+                <strong>Windows</strong>
+                <small>Errores del sistema</small>
+              </span>
+            </a>
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('games')">
+              <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6" ry="6"/><circle cx="16" cy="12" r="1"/><circle cx="18" cy="12" r="1"/><path d="M6 12h4"/><path d="M8 10v4"/></svg>
+              <span>
+                <strong>Juegos</strong>
+                <small>Crashes y errores</small>
+              </span>
+            </a>
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('dev')">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>
+                <strong>Programaci&oacute;n</strong>
+                <small>Bugs y errores</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sobre Mi -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <svg class="nav-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Sobre M&iacute;
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="/about.html" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <span>
+                <strong>Mi Historia</strong>
+                <small>Qui&eacute;n soy</small>
+              </span>
+            </a>
+            <a href="/socials.html" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>
+                <strong>Redes Sociales</strong>
+                <small>D&oacute;nde encontrarme</small>
+              </span>
+            </a>
+            <a href="mailto:Aaronvelasquez1712@gmail.com" class="dropdown-item">
+              <svg class="di-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>
+                <strong>Contacto</strong>
+                <small>Escr&iacute;beme</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a href="mailto:Aaronvelasquez1712@gmail.com" class="btn-primary-sm">Contacto</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">Bienvenido a <span class="highlight">GamingNET</span></h1>
+      <p class="hero-subtitle">
+        Proyectos, juegos para descargar y gu&iacute;as PDF para solucionar errores. Todo en un solo lugar.
+      </p>
+      <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+    </div>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+  </section>
+
+  <!-- ===== GLOBAL SEARCH ===== -->
+  <section class="container search-section">
+    <div class="search-glass-container">
+      <div class="search-filter">
+        <button id="search-filter-btn" class="search-filter-btn" aria-label="Filtros de búsqueda">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+        </button>
+        <div id="search-filter-dropdown" class="search-filter-dropdown">
+          <div class="dropdown-header">Buscar en:</div>
+          <label class="filter-option">
+            <input type="radio" name="searchCat" value="all" checked>
+            <span class="radio-custom"></span>
+            <span class="filter-label">Todo</span>
+          </label>
+          <label class="filter-option">
+            <input type="radio" name="searchCat" value="proyectos">
+            <span class="radio-custom"></span>
+            <span class="filter-label">Proyectos</span>
+          </label>
+          <label class="filter-option">
+            <input type="radio" name="searchCat" value="juegos">
+            <span class="radio-custom"></span>
+            <span class="filter-label">Juegos</span>
+          </label>
+          <label class="filter-option">
+            <input type="radio" name="searchCat" value="fixhub">
+            <span class="radio-custom"></span>
+            <span class="filter-label">Guías FixHub</span>
+          </label>
+        </div>
+      </div>
+      <input type="text" id="global-search-input" class="search-input" placeholder="Buscar en GamingNET...">
+      <button class="search-submit-btn" aria-label="Buscar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS SECTION ===== -->
+  <main class="container section" id="proyectos">
+    <div class="section-header">
+      <h2 class="section-title">&Uacute;ltimas Publicaciones</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div id="projects-grid" class="projects-grid"></div>
+    <div id="loading-state" class="status-message">
+      <div class="loader"></div>
+      <p>Cargando proyectos...</p>
+    </div>
+    <div id="empty-state" class="status-message hidden">
+      <p>No hay ningún proyecto</p>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/project.html" class="btn-primary">Ver todos los proyectos</a>
+    </div>
+  </main>
+
+  <!-- ===== JUEGOS SECTION ===== -->
+  <section class="container section" id="juegos">
+    <div class="section-header">
+      <h2 class="section-title"> <svg class="title-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6" ry="6"/><circle cx="16" cy="12" r="1"/><circle cx="18" cy="12" r="1"/><path d="M6 12h4"/><path d="M8 10v4"/></svg> Juegos</h2>
+      <div class="title-underline"></div>
+      <p class="section-description">Descarga los juegos disponibles. Totalmente gratis.</p>
+    </div>
+    <div class="games-dl-grid" id="index-games-grid">
+      <!-- Los juegos se cargarán dinámicamente aquí -->
+    </div>
+    
+    <div id="games-empty" class="status-message hidden">
+      <p>No hay juegos disponibles.</p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/games.html" class="btn-primary">Ver todos los juegos</a>
+    </div>
+  </section>
+
+  <!-- ===== FIXHUB SECTION ===== -->
+  <section class="fixhub-section" id="fixhub">
+    <div class="container section">
+      <div class="section-header">
+        <h2 class="section-title"> <svg class="title-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> FixHub</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">Gu&iacute;as en PDF para solucionar errores de Windows, juegos y programaci&oacute;n. Descarga gratis.</p>
+      </div>
+
+      <!-- Filtros de categoría -->
+      <div class="fixhub-filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="windows"> <svg class="title-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Windows</button>
+        <button class="filter-btn" data-filter="games"> <svg class="title-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="6" ry="6"/><circle cx="16" cy="12" r="1"/><circle cx="18" cy="12" r="1"/><path d="M6 12h4"/><path d="M8 10v4"/></svg> Juegos</button>
+        <button class="filter-btn" data-filter="dev"> <svg class="title-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> Programaci&oacute;n</button>
+      </div>
+
+      <div class="fixhub-grid" id="index-fixhub-grid">
+        <!-- Los PDFs se cargarán dinámicamente aquí -->
+      </div>
+      
+      <div id="fixhub-empty" class="status-message hidden">
+        <p>No hay información disponible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Gaming<span>NET</span></h3>
+        <p>Construido con dedicaci&oacute;n.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/FluxzyZzz" target="_blank" class="social-link">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GamingNET. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Hamburger menu JS -->
+  <script>
+    // ===== HAMBURGER MOBILE MENU =====
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Cerrar al hacer click fuera
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+        document.body.style.overflow = '';
+        closeAllDropdowns();
+      }
+    });
+
+    // ===== DROPDOWNS =====
+    function closeAllDropdowns(except) {
+      document.querySelectorAll('.nav-item.has-dropdown').forEach(item => {
+        if (item !== except) {
+          item.classList.remove('open');
+          const trigger = item.querySelector('.nav-dropdown-trigger');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const item = trigger.closest('.nav-item');
+        const isOpen = item.classList.contains('open');
+        closeAllDropdowns(item);
+        item.classList.toggle('open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    // Cerrar dropdown al hacer click en un enlace del dropdown
+    document.querySelectorAll('.dropdown-item').forEach(link => {
+      link.addEventListener('click', () => {
+        closeAllDropdowns();
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ===== FIXHUB CATEGORY FILTER =====
+    function filterCategory(cat) {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const fixCards = document.querySelectorAll('.fix-card');
+      filterBtns.forEach(b => {
+        b.classList.toggle('active', b.dataset.filter === cat);
+      });
+      fixCards.forEach(card => {
+        const show = cat === 'all' || card.dataset.category === cat;
+        card.style.display = show ? '' : 'none';
+        if (show) card.style.animation = 'fadeUp 0.4s ease both';
+      });
+    }
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => filterCategory(btn.dataset.filter));
+    });
+
+    // ===== SEARCH FILTER DROPDOWN =====
+    const searchFilterBtn = document.getElementById('search-filter-btn');
+    const searchFilter = document.querySelector('.search-filter');
+
+    if (searchFilterBtn) {
+      searchFilterBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        searchFilter.classList.toggle('open');
+      });
+    }
+
+    // Cerrar el filtro de búsqueda al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (searchFilter && !searchFilter.contains(e.target)) {
+        searchFilter.classList.remove('open');
+      }
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
+</body>
+</html>

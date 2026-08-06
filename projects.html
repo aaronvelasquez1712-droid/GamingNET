@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GamingNET | Proyectos, Juegos y Gu&iacute;as</title>
+  <meta name="description" content="Explora proyectos, descarga juegos y encuentra gu&iacute;as PDF para solucionar errores en GamingNET." />
+
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="icon" type="image/png" href="./assets/favicon-CzTPtEBl.png" />
+  <script type="module" crossorigin src="./assets/supabase-L-0F_XPF.js"></script>
+  <script type="module" crossorigin src="./assets/main-Bt3XH_3P.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/style-vIweGScI.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="/" class="logo">Gaming<span>NET</span></a>
+
+      <nav class="nav-links" id="nav-menu">
+
+        <!-- Inicio -->
+        <a href="#hero" class="nav-link nav-simple">
+          <span class="nav-icon">&#127968;</span> Inicio
+        </a>
+
+        <!-- Proyectos -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <span class="nav-icon">&#128196;</span> Proyectos
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#proyectos" class="dropdown-item">
+              <span class="di-icon">&#128218;</span>
+              <span>
+                <strong>Publicaciones</strong>
+                <small>Mis &uacute;ltimas entradas</small>
+              </span>
+            </a>
+            <a href="/project.html" class="dropdown-item">
+              <span class="di-icon">&#128295;</span>
+              <span>
+                <strong>Proyectos</strong>
+                <small>Todos mis proyectos</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Juegos -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <span class="nav-icon">&#127918;</span> Juegos
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#juegos" class="dropdown-item">
+              <span class="di-icon">&#128187;</span>
+              <span>
+                <strong>Todos los Juegos</strong>
+                <small>Cat&aacute;logo completo</small>
+              </span>
+            </a>
+            <a href="#juegos" class="dropdown-item">
+              <span class="di-icon">&#127881;</span>
+              <span>
+                <strong>Novedades</strong>
+                <small>Reci&eacute;n subidos</small>
+              </span>
+            </a>
+            <a href="#juegos" class="dropdown-item">
+              <span class="di-icon">&#128526;</span>
+              <span>
+                <strong>Pr&oacute;ximamente</strong>
+                <small>En preparaci&oacute;n</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- FixHub -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <span class="nav-icon">&#128736;&#65039;</span> FixHub
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('all')">
+              <span class="di-icon">&#128196;</span>
+              <span>
+                <strong>Todas las Gu&iacute;as</strong>
+                <small>Ver todo</small>
+              </span>
+            </a>
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('windows')">
+              <span class="di-icon">&#127991;</span>
+              <span>
+                <strong>Windows</strong>
+                <small>Errores del sistema</small>
+              </span>
+            </a>
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('games')">
+              <span class="di-icon">&#127918;</span>
+              <span>
+                <strong>Juegos</strong>
+                <small>Crashes y errores</small>
+              </span>
+            </a>
+            <a href="#fixhub" class="dropdown-item" onclick="filterCategory('dev')">
+              <span class="di-icon">&#128187;</span>
+              <span>
+                <strong>Programaci&oacute;n</strong>
+                <small>Bugs y errores</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sobre Mi -->
+        <div class="nav-item has-dropdown">
+          <button class="nav-link nav-dropdown-trigger" aria-expanded="false">
+            <span class="nav-icon">&#128100;</span> Sobre M&iacute;
+            <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="nav-dropdown">
+            <a href="/about.html" class="dropdown-item">
+              <span class="di-icon">&#9997;&#65039;</span>
+              <span>
+                <strong>Mi Historia</strong>
+                <small>Qui&eacute;n soy</small>
+              </span>
+            </a>
+            <a href="/socials.html" class="dropdown-item">
+              <span class="di-icon">&#127758;</span>
+              <span>
+                <strong>Redes Sociales</strong>
+                <small>D&oacute;nde encontrarme</small>
+              </span>
+            </a>
+            <a href="mailto:Aaronvelasquez1712@gmail.com" class="dropdown-item">
+              <span class="di-icon">&#128140;</span>
+              <span>
+                <strong>Contacto</strong>
+                <small>Escr&iacute;beme</small>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <a href="mailto:Aaronvelasquez1712@gmail.com" class="btn-primary-sm">Contacto</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir men&uacute;">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ===== PROYECTOS SECTION ===== -->
+  <main class="container section" id="proyectos">
+    <div class="section-header">
+      <h2 class="section-title">Todos los Proyectos</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div id="projects-grid" class="projects-grid"></div>
+    <div id="loading-state" class="status-message">
+      <div class="loader"></div>
+      <p>Cargando proyectos...</p>
+    </div>
+    <div id="empty-state" class="status-message hidden">
+      <p>No hay ningún proyecto</p>
+    </div>
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/" class="btn-primary">Volver a Inicio</a>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Gaming<span>NET</span></h3>
+        <p>Construido con dedicaci&oacute;n.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com/FluxzyZzz" target="_blank" class="social-link">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 GamingNET. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Hamburger menu JS -->
+  <script>
+    // ===== HAMBURGER MOBILE MENU =====
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open');
+      document.body.style.overflow = navMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Cerrar al hacer click fuera
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+        document.body.style.overflow = '';
+        closeAllDropdowns();
+      }
+    });
+
+    // ===== DROPDOWNS =====
+    function closeAllDropdowns(except) {
+      document.querySelectorAll('.nav-item.has-dropdown').forEach(item => {
+        if (item !== except) {
+          item.classList.remove('open');
+          const trigger = item.querySelector('.nav-dropdown-trigger');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const item = trigger.closest('.nav-item');
+        const isOpen = item.classList.contains('open');
+        closeAllDropdowns(item);
+        item.classList.toggle('open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+
+    // Cerrar dropdown al hacer click en un enlace del dropdown
+    document.querySelectorAll('.dropdown-item').forEach(link => {
+      link.addEventListener('click', () => {
+        closeAllDropdowns();
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // ===== FIXHUB CATEGORY FILTER =====
+    function filterCategory(cat) {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const fixCards = document.querySelectorAll('.fix-card');
+      filterBtns.forEach(b => {
+        b.classList.toggle('active', b.dataset.filter === cat);
+      });
+      fixCards.forEach(card => {
+        const show = cat === 'all' || card.dataset.category === cat;
+        card.style.display = show ? '' : 'none';
+        if (show) card.style.animation = 'fadeUp 0.4s ease both';
+      });
+    }
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => filterCategory(btn.dataset.filter));
+    });
+
+    // ===== SEARCH FILTER DROPDOWN =====
+    const searchFilterBtn = document.getElementById('search-filter-btn');
+    const searchFilter = document.querySelector('.search-filter');
+
+    if (searchFilterBtn) {
+      searchFilterBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        searchFilter.classList.toggle('open');
+      });
+    }
+
+    // Cerrar el filtro de búsqueda al hacer clic fuera
+    document.addEventListener('click', (e) => {
+      if (searchFilter && !searchFilter.contains(e.target)) {
+        searchFilter.classList.remove('open');
+      }
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
+</body>
+</html>
